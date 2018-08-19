@@ -226,7 +226,8 @@ input[type=submit] {
   border: 0 none;
 }
 
-/* @media screen and (max-width: 980px) {
+/* media query max-width 980px */
+@media screen and (max-width: 980px) {
   body {
    width: 100%;
   }
@@ -238,6 +239,7 @@ input[type=submit] {
 
 }
 
+/* media query max-width 768px */
 @media screen and (max-width: 768px) {
   body {
    width: 100%;
@@ -247,10 +249,12 @@ input[type=submit] {
   #main-content,{
     width: 100%;
   }
-} */
+}
+/* media query max-width 640px */
 @media screen and (max-width: 640px) {
   #masthead {
     background-color: #4aaaa5;
+    clear: auto;
   }
  .masthead-container .logo a {
     position: absolute;
@@ -260,8 +264,10 @@ input[type=submit] {
 
   nav {
     position: fixed;
-    float: left;
-    margin-top: 90px; 
+    display: block;
+    clear: auto;
+    margin-left: 0;
+    margin-top: 90px;
   }
 
   .work {
